@@ -1,0 +1,267 @@
+/* --- Paleta Técnica Precisa --- */
+:root {
+    --azul-precisa: #1F3559;   /* Azul Escuro Oficial */
+    --laranja-precisa: #F06630; /* Laranja Oficial */
+    --preto-tecnico: #000000;
+    --branco: #FFFFFF;
+    --cinza-fundo: #F4F7F9;
+    --cinza-borda: #D1D9E0;
+    --fonte-industrial: 'Syncopate', sans-serif;
+    --fonte-leitura: 'Chivo', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: var(--fonte-leitura);
+    background-color: var(--cinza-fundo);
+    color: var(--preto-tecnico);
+    padding-top: 100px;
+    line-height: 1.4;
+}
+
+/* --- Navbar Profissional --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--azul-precisa);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 4px solid var(--laranja-precisa);
+}
+
+.brand-container { display: flex; flex-direction: column; }
+.brand-main {
+    font-family: var(--fonte-industrial);
+    color: var(--laranja-precisa);
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+.brand-sub {
+    color: var(--branco);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.search-box input {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    width: 300px;
+    font-family: var(--fonte-leitura);
+    outline: none;
+}
+
+.main-menu-lista { display: flex; list-style: none; gap: 20px; }
+.main-menu-lista a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+.main-menu-lista a:hover { color: var(--laranja-precisa); }
+
+/* --- Grid de Produtos (Visual de Catálogo Limpo) --- */
+.produtos-tecnicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.card-tecnico {
+    background: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-tecnico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background: var(--azul-precisa);
+    color: var(--branco);
+    padding: 12px 20px;
+    text-align: center;
+}
+.card-header h2 {
+    font-family: var(--fonte-industrial);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Layout Vertical: Foto em cima, Tabela em baixo */
+.card-body-vertical {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.product-visual-central {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--cinza-borda);
+}
+.product-visual-central img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.product-data-full {
+    width: 100%;
+    padding: 15px;
+}
+
+/* --- Tabelas Técnicas --- */
+.tabela-tecnica {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+}
+.tabela-tecnica th {
+    background: #f0f0f0;
+    color: var(--azul-precisa);
+    text-align: left;
+    padding: 8px;
+    border-bottom: 2px solid var(--laranja-precisa);
+    font-family: var(--fonte-industrial);
+    font-size: 0.65rem;
+}
+.tabela-tecnica td {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+.tabela-tecnica tr:nth-child(even) { background: #fafafa; }
+
+/* --- Footer e Botão de Impressão --- */
+.site-footer {
+    background: var(--azul-precisa);
+    color: var(--branco);
+    padding: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+.btn-print {
+    background: var(--laranja-precisa);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-family: var(--fonte-industrial);
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: opacity 0.3s;
+}
+.btn-print:hover { opacity: 0.9; }
+
+/* --- CONFIGURAÇÃO DE IMPRESSÃO (3 COLUNAS E CORES) --- */
+@media print {
+    @page {
+        margin: 0; 
+    }
+
+    /* 2. Como zeramos a página, devolvemos um respiro no body para a impressora não cortar a borda */
+    body { 
+        padding-top: 4cm !important; 
+        padding-bottom: 4cm !important;
+        padding-left: 0.5cm !important;
+        padding-right: 0.5cm !important;
+        background: white !important; 
+    }
+    /* MÁGICA PARA IMPRIMIR AS CORES DE FUNDO */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .navbar, .btn-print, .search-box, .site-footer { display: none !important; }
+    
+    body { padding-top: 0 !important; background: white !important; }
+    
+    .print-header {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--azul-precisa) !important;
+        border-bottom: 4px solid var(--laranja-precisa) !important;
+        margin-bottom: 20px;
+        padding: 15px !important;
+    }
+
+    .print-brand h1 {
+        font-family: var(--fonte-industrial) !important;
+        color: var(--laranja-precisa) !important;
+        font-size: 1.2rem !important;
+        margin: 0;
+    }
+
+    .print-brand p, .print-info p {
+        font-size: 0.7rem !important;
+        margin: 0;
+        color: var(--branco) !important;
+    }
+
+    .produtos-tecnicos-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 10px !important;
+        padding: 0 !important;
+    }
+
+    .card-tecnico {
+        break-inside: avoid;
+        border: 1px solid #333 !important;
+        margin-bottom: 10px;
+    }
+
+    .card-header { 
+        background: var(--azul-precisa) !important; 
+        color: var(--branco) !important; 
+        font-size: 0.65rem !important; 
+        margin: 0;
+        padding: 6px !important;
+        text-align: center;
+    }
+    
+    .card-header h2 {
+        font-size: 0.65rem !important;
+        margin: 0;
+    }
+    
+    .product-visual-central img { max-height: 120px !important; }
+    
+    .tabela-tecnica th, .tabela-tecnica td {
+        font-size: 0.6rem !important;
+        padding: 4px !important;
+    }
+}
+
+.print-header { display: none; }
+
+/* Responsividade para Ecrãs Pequenos */
+@media (max-width: 768px) {
+    .navbar { flex-direction: column; padding: 10px; gap: 10px; }
+    .search-box input { width: 100%; }
+    .produtos-tecnicos-grid { grid-template-columns: 1fr; }
+}

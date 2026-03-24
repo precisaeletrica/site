@@ -1,0 +1,97 @@
+{
+  "itens": [
+    {
+      "categoria": "CABOS",
+      "titulo": "Cabo Flexível 750V",
+      "imagem": "https://www.tecnocabos.com.br/media/sig_TrpjTvPG1f/categorias/cabos-eletricos/cabos-eletricos-03.jpeg",
+      "especificacoes": [
+        {"codigo": "CB0150", "descricao": "Seção: 1,5mm² / Cores: Azul, Preto, Vermelho", "embalagem": "RL 100M"},
+        {"codigo": "CB0250", "descricao": "Seção: 2,5mm² / Cores: Azul, Preto, Vermelho", "embalagem": "RL 100M"},
+        {"codigo": "CB0400", "descricao": "Seção: 4,0mm² / Cores: Verde, Amarelo", "embalagem": "RL 100M"}
+      ]
+    },
+    {
+      "categoria": "CABOS",
+      "titulo": "Cabo PP 2 Vias",
+      "imagem": "https://images.tcdn.com.br/img/img_prod/720021/cabo_pp_2_vias_de_1_5_milimetros_2_x_1_5mm_por_metro_1373_1_911740cd061b6af805983d89a0bd343c.jpg",
+      "especificacoes": [
+        {"codigo": "PP0210", "descricao": "2 x 1,00mm² / Isolação: PVC 70°C", "embalagem": "RL 100M"},
+        {"codigo": "PP0225", "descricao": "2 x 2,50mm² / Isolação: PVC 70°C", "embalagem": "RL 50M"}
+      ]
+    },
+    {
+      "categoria": "TUBOS",
+      "titulo": "Eletroduto Flexível Corrugado (Conduíte)",
+      "imagem": "https://images.tcdn.com.br/img/img_prod/448593/eletroduto_corrugado_flexivel_elecon_25mm_3_4_amarelo_50mt_22249_1_1530c5c4e3c4cf1f53c664e0338c9b0b.jpg",
+      "especificacoes": [
+        {"codigo": "TU0020", "descricao": "Diâmetro: 20mm (1/2\") / Cor: Amarelo", "embalagem": "RL 50M"},
+        {"codigo": "TU0025", "descricao": "Diâmetro: 25mm (3/4\") / Cor: Amarelo", "embalagem": "RL 50M"},
+        {"codigo": "TU0032", "descricao": "Diâmetro: 32mm (1\") / Cor: Amarelo", "embalagem": "RL 25M"}
+      ]
+    },
+    {
+      "categoria": "MÓDULOS",
+      "titulo": "Conjunto Tomada 2P+T 10A",
+      "imagem": "https://images.tcdn.com.br/img/img_prod/726039/2_tom_2p_t_10a_250v_pl4x2_compose_br_123_1_20191204145620.png",
+      "especificacoes": [
+        {"codigo": "MOD001", "descricao": "Placa 4x2 + Suporte + Módulo (Branco)", "embalagem": "UN"},
+        {"codigo": "MOD002", "descricao": "Apenas Módulo de Reposição 10A", "embalagem": "UN"}
+      ]
+    },
+    {
+      "categoria": "MÓDULOS",
+      "titulo": "Interruptor Simples 10A",
+      "imagem": "https://images.tcdn.com.br/img/img_prod/625353/3_pcs_conjunto_interruptor_simples_10a_250v_vertical_slim_ilm0062_6047_1_20190424141708.jpg",
+      "especificacoes": [
+        {"codigo": "INT001", "descricao": "Módulo de Interruptor Simples (Branco)", "embalagem": "UN"},
+        {"codigo": "INT002", "descricao": "Módulo de Interruptor Paralelo (Branco)", "embalagem": "UN"}
+      ]
+    },
+    {
+      "categoria": "ILUMINAÇÃO",
+      "titulo": "Refletor LED Slim IP65",
+      "imagem": "https://lojaluzdomundo.cdn.magazord.com.br/img/2024/05/produto/464856/01-refletor-led-slim-10w-ip65-preto-ourolux.png?ims=fit-in/800x800/filters:fill(white)",
+      "especificacoes": [
+        {"codigo": "RF0030", "descricao": "Potência: 30W / Cor: 6500K (Frio)", "embalagem": "UN"},
+        {"codigo": "RF0050", "descricao": "Potência: 50W / Cor: 6500K (Frio)", "embalagem": "UN"},
+        {"codigo": "RF0100", "descricao": "Potência: 100W / Cor: 6500K (Frio)", "embalagem": "UN"}
+      ]
+    },
+    {
+      "categoria": "ILUMINAÇÃO",
+      "titulo": "Painel LED Embutir Quadrado",
+      "imagem": "https://pedraopvc.vteximg.com.br/arquivos/ids/200661-800-800/plafon-quadrado-18w-6500k-1260lm-embutir-luz-branca-avant-1.0.jpg?v=638375623448000000",
+      "especificacoes": [
+        {"codigo": "PL0012", "descricao": "Potência: 12W / Dimensões: 17x17cm", "embalagem": "UN"},
+        {"codigo": "PL0018", "descricao": "Potência: 18W / Dimensões: 22x22cm", "embalagem": "UN"},
+        {"codigo": "PL0024", "descricao": "Potência: 24W / Dimensões: 30x30cm", "embalagem": "UN"}
+      ]
+    },
+    {
+      "categoria": "FERRAMENTAS",
+      "titulo": "Alicate Universal 8\"",
+      "imagem": "https://anhangueraferramentas.fbitsstatic.net/img/p/alicate-universal-8-isolado-1000v-nr10-41001-108-tramontina-master-101840/290578-5.jpg?w=650&h=650&v=no-value",
+      "especificacoes": [
+        {"codigo": "FER001", "descricao": "Cabo Isolado 1000V / Aço Cromo Vanádio", "embalagem": "UN"}
+      ]
+    },
+    {
+      "categoria": "FERRAMENTAS",
+      "titulo": "Chave de Fenda / Philips",
+      "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lwypkfeg1hhb65",
+      "especificacoes": [
+        {"codigo": "FER010", "descricao": "Fenda 1/4 x 6\" / Haste Isolada", "embalagem": "UN"},
+        {"codigo": "FER011", "descricao": "Philips 1/4 x 6\" / Haste Isolada", "embalagem": "UN"}
+      ]
+    },
+    {
+      "categoria": "DIVERSOS",
+      "titulo": "Abraçadeira Nylon (Enforca Gato)",
+      "imagem": "https://bcsmateriais.cdn.magazord.com.br/img/2024/01/produto/1055/abracadeiras-foxlux.jpg?ims=fit-in/600x600/filters:fill(white)",
+      "especificacoes": [
+        {"codigo": "008812", "descricao": "2,5mm x 100mm (Preta)", "embalagem": "PT 100 UN"},
+        {"codigo": "008815", "descricao": "4,8mm x 300mm (Branca)", "embalagem": "PT 50 UN"}
+      ]
+    }
+  ]
+}
