@@ -136,6 +136,11 @@
           "codigo": "PL0024",
           "descricao": "Potência: 24W / Dimensões: 30x30cm",
           "embalagem": "UN"
+        },
+        {
+          "codigo": "PL0024",
+          "descricao": "Potência: 30W / Dimensões: 30x30cm",
+          "embalagem": "UN"
         }
       ]
     },
